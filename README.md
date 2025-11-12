@@ -143,3 +143,35 @@ data-warehouse-and-analytics-project/
 ├── LICENSE                               # Open-source license (MIT)
 ├── .gitignore                            # Ignore unnecessary files/folders
 └── requirements.txt                      # Dependencies and setup info
+
+
+
+
+
+
+
+
+
+🛡️ License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and share this project with proper credit.
+
+🌟 About Me
+
+👩‍💻 Asna Sharin P V — Data Analyst
+
+I’m passionate about transforming raw data into meaningful insights.
+Skilled in SQL, Excel, Tableau, Power BI, and data visualization, I focus on turning data into clear, actionable stories.
+
+📬 Connect With Me
+
+Let’s connect and collaborate!
+
+🌐 Portfolio: https://asnasharinpv.netlify.app
+
+💼 LinkedIn: https://linkedin.com/in/asna-sharin-b3757025a
+
+💻 GitHub: https://github.com/asnasharin28
+
+✉️ Email: asnasharin2003@gmail.com

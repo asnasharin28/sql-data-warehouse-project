@@ -143,14 +143,7 @@ data-warehouse-and-analytics-project/
 ├── LICENSE                               # Open-source license (MIT)
 ├── .gitignore                            # Ignore unnecessary files/folders
 └── requirements.txt                      # Dependencies and setup info
-
-
-
-
-
-
-
-
+```
 
 🛡️ License
 
@@ -175,3 +168,5 @@ Let’s connect and collaborate!
 💻 GitHub: https://github.com/asnasharin28
 
 ✉️ Email: asnasharin2003@gmail.com
+
+

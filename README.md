@@ -1,2 +1,134 @@
-# sql-data-warehouse-project
-Developed a modern data warehouse in SQL Server with end-to-end ETL, data modeling, and analytical reporting to support data-driven business insights.
+📊 Data Warehouse and Analytics Project
+
+Welcome to the Data Warehouse and Analytics Project repository! 🚀
+This project demonstrates a complete data warehousing and analytics solution, from building a modern data warehouse to generating actionable business insights.
+
+
+🏗️ Data Architecture
+
+This project adopts the Medallion Architecture (Bronze–Silver–Gold layers) for a scalable and organized data pipeline.
+
+Layer	Description
+🥉 Bronze Layer	Stores raw data directly from source systems (CSV files → SQL Server Database).
+🥈 Silver Layer	Cleanses, standardizes, and normalizes data to prepare it for analysis.
+🥇 Gold Layer	Contains business-ready data modeled in a Star Schema for analytics and reporting.
+📖 Project Overview
+
+This project includes:
+
+✅ Data Architecture – Designing a modern data warehouse using the Medallion Architecture.
+✅ ETL Pipelines – Extracting, transforming, and loading data into SQL Server.
+✅ Data Modeling – Creating fact and dimension tables optimized for analytics.
+✅ Analytics & Reporting – Writing SQL-based reports and dashboards to generate insights.
+
+🎯 Skills Demonstrated
+
+This repository highlights core data analytics and engineering skills:
+
+🧩 SQL Development & Query Optimization
+
+🏗️ Data Architecture & Schema Design
+
+⚙️ ETL Pipeline Development
+
+🧮 Data Cleaning & Transformation
+
+📊 Data Analytics & KPI Reporting
+
+🛠️ Tools & Technologies
+
+All tools used are free and beginner-friendly, ideal for analysts building hands-on experience:
+
+Tool	Purpose
+🗄️ SQL Server Express	Lightweight database server for data storage and transformation.
+💻 SQL Server Management Studio (SSMS)	GUI for database management and query execution.
+🧾 Datasets (CSV Files)	Source data from ERP and CRM systems.
+🧠 Draw.io	Used for data architecture, flow, and model diagrams.
+📘 Notion	Project documentation and task tracking.
+🔗 Git & GitHub	Version control and project collaboration.
+
+🧩 Includes a Notion project template and step-by-step task tracking for each project phase.
+
+🚀 Project Requirements
+🏗️ 1️⃣ Building the Data Warehouse (Data Engineering)
+
+Objective:
+Develop a modern data warehouse using SQL Server to consolidate sales data and enable analytical reporting.
+
+Specifications:
+
+Import ERP & CRM datasets from CSV files.
+
+Cleanse and resolve data quality issues.
+
+Integrate both sources into a unified, analytics-ready model.
+
+Focus on the latest dataset (historization not required).
+
+Document the data model and architecture for stakeholders and analysts.
+
+📊 2️⃣ BI, Analytics & Reporting (Data Analysis)
+
+Objective:
+Perform SQL-based analytics to extract insights on:
+
+👥 Customer Behavior
+
+📦 Product Performance
+
+💰 Sales Trends
+
+These insights help stakeholders make data-driven business decisions and monitor key performance metrics.
+
+For more details, see docs/requirements.md
+
+📂 Repository Structure
+data-warehouse-project/
+│
+├── datasets/                           # Raw datasets (ERP and CRM)
+│
+├── docs/                               # Documentation & architecture diagrams
+│   ├── etl.drawio                      # ETL workflow diagram
+│   ├── data_architecture.drawio        # Medallion architecture
+│   ├── data_catalog.md                 # Dataset field descriptions
+│   ├── data_flow.drawio                # Data flow process
+│   ├── data_models.drawio              # Star schema model
+│   ├── naming-conventions.md           # Consistent naming rules
+│
+├── scripts/                            # SQL scripts for ETL
+│   ├── bronze/                         # Extract & load raw data
+│   ├── silver/                         # Clean & transform data
+│   ├── gold/                           # Build analytical data models
+│
+├── tests/                              # Data validation & quality scripts
+│
+├── README.md                           # Project documentation
+├── LICENSE                             # MIT license
+├── .gitignore                          # Ignored files
+└── requirements.txt                    # Project dependencies
+
+🛡️ License
+
+This project is licensed under the MIT License.
+You are free to use, modify, and share this project with proper credit.
+
+🌟 About Me
+
+👩‍💻 Asna Sharin P V — Data Analyst
+
+I’m passionate about transforming raw data into meaningful insights.
+Skilled in SQL, Excel, Tableau, Power BI, and data visualization, I focus on turning data into clear, actionable stories.
+
+
+
+📬 Connect With Me
+
+Let’s connect and collaborate!
+
+🌐 Portfolio: https://asnasharinpv.netlify.app
+
+💼 LinkedIn: https://linkedin.com/in/asna-sharin-b3757025a
+
+💻 GitHub: https://github.com/asnasharin28
+
+✉️ Email: asnasharin2003@gmail.com

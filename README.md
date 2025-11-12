@@ -82,30 +82,57 @@ These insights help stakeholders make data-driven business decisions and monitor
 
 For more details, see docs/requirements.md
 
-📂 Repository Structure
-data-warehouse-project/
+data-warehouse-and-analytics-project/
 │
-├── datasets/                           # Raw datasets (ERP and CRM)
+├── 📁 datasets/                          # Raw and sample data files
+│   ├── erp_data.csv                      # ERP source data
+│   ├── crm_data.csv                      # CRM source data
+│   └── readme.txt                        # Info about data sources
 │
-├── docs/                               # Documentation & architecture diagrams
-│   ├── etl.drawio                      # ETL workflow diagram
-│   ├── data_architecture.drawio        # Medallion architecture
-│   ├── data_catalog.md                 # Dataset field descriptions
-│   ├── data_flow.drawio                # Data flow process
-│   ├── data_models.drawio              # Star schema model
-│   ├── naming-conventions.md           # Consistent naming rules
+├── 📁 docs/                              # Documentation & design files
+│   ├── data_architecture.drawio          # Medallion architecture (Bronze, Silver, Gold)
+│   ├── etl_pipeline.drawio               # ETL flow diagram
+│   ├── data_models.drawio                # Star schema data model
+│   ├── data_catalog.md                   # Dataset descriptions and metadata
+│   ├── data_flow.drawio                  # Data flow visualization
+│   ├── naming-conventions.md             # Standards for naming tables, fields, scripts
+│   └── requirements.md                   # Detailed project requirements & goals
 │
-├── scripts/                            # SQL scripts for ETL
-│   ├── bronze/                         # Extract & load raw data
-│   ├── silver/                         # Clean & transform data
-│   ├── gold/                           # Build analytical data models
+├── 📁 scripts/                           # SQL scripts for ETL and modeling
+│   ├── 📁 bronze/                        # Raw data ingestion scripts
+│   │   ├── 01_create_bronze_tables.sql
+│   │   └── 02_load_raw_data.sql
+│   │
+│   ├── 📁 silver/                        # Data cleaning and transformation scripts
+│   │   ├── 01_clean_transform.sql
+│   │   └── 02_standardize_data.sql
+│   │
+│   ├── 📁 gold/                          # Analytical data model (star schema)
+│   │   ├── 01_create_fact_tables.sql
+│   │   └── 02_create_dimension_tables.sql
+│   │
+│   └── readme.txt                        # Notes about script execution order
 │
-├── tests/                              # Data validation & quality scripts
+├── 📁 analytics/                         # SQL queries and reports for insights
+│   ├── customer_behavior_analysis.sql
+│   ├── product_performance_analysis.sql
+│   ├── sales_trends_analysis.sql
+│   └── kpi_summary_report.sql
 │
-├── README.md                           # Project documentation
-├── LICENSE                             # MIT license
-├── .gitignore                          # Ignored files
-└── requirements.txt                    # Project dependencies
+├── 📁 tests/                             # Data validation & QA scripts
+│   ├── data_quality_checks.sql
+│   ├── null_value_check.sql
+│   └── duplicate_check.sql
+│
+├── 📁 outputs/                           # Final processed data or reports
+│   ├── cleaned_data_exports/
+│   ├── analytics_results/
+│   └── visualizations/                   # Screenshots of Tableau / Power BI dashboards (optional)
+│
+├── README.md                             # Project overview and documentation
+├── LICENSE                               # Open-source license (MIT)
+├── .gitignore                            # Ignore unnecessary files/folders
+└── requirements.txt                      # Dependencies and setup info
 
 🛡️ License
 

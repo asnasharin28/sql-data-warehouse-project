@@ -124,7 +124,7 @@ BEGIN
         )
         SELECT 
             prd_id,
-            REPLACE(SUBSTRING(prd_key, 1, 5), '-', '_ '),
+            REPLACE(SUBSTRING(prd_key, 1, 5), '-', '_'),
             SUBSTRING(prd_key, 7, LEN(prd_key)),
             prd_nm,
             ISNULL(prd_cost, 0),

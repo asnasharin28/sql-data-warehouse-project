@@ -1,6 +1,30 @@
-EXEC silver.load_silver;
-GO
+/* 
+============================================================
+STORED PROCEDURE: silver.load_silver
+------------------------------------------------------------
+Purpose:
+ - Load cleaned and standardized data into the Silver layer(bronze -> silver).
+ - Applies business rules, transformations, trims, mappings,
+   deduplication logic, and data-type corrections.
+ - Performs TRUNCATE + INSERT INTO for all Silver tables.
+ - Tracks load duration for each table and the entire batch.
+ - Includes TRY...CATCH error handling for safe execution.
 
+Execution Notes:
+ - This procedure does NOT accept any input parameters.
+ - Designed for daily/periodic batch ETL after Bronze load.
+ - Must be executed AFTER bronze.load_bronze is completed.
+
+How to Execute:
+    EXEC silver.load_silver;
+
+Prerequisites:
+ - Bronze tables must contain successfully ingested raw data.
+ - Silver tables must already exist (DDL must be executed).
+ - Appropriate permissions required for TRUNCATE + INSERT.
+
+============================================================
+*/
 
 CREATE OR ALTER PROCEDURE silver.load_silver 
 AS
